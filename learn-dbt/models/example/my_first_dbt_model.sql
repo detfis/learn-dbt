@@ -1,4 +1,4 @@
-{{ config(materialized="table", alias='first_model') }}
+{{ config(materialized="table", alias='first_model_test') }}
 /*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
@@ -14,6 +14,7 @@ with source_data as (
     select null as id
     union all
     select 2 as id
+    
 
 )
 
